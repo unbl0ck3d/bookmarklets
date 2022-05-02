@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <script>
+        const arr = ["fortnite", "your bank account balance", "cool"];
+        const chooseRandom = (arr, num = 1) => {
+           const res = [];
+           for(let i = 0; i < num; ){
+              const random = Math.floor(Math.random() * arr.length);
+              if(res.indexOf(arr[random]) !== -1){
+                 continue;
+              };
+              res.push(arr[random]);
+              i++;
+           };
+           return res;
+        };
+        document.getElementById("demoa").innerHTML = (chooseRandom(arr, 1));
+        console.log(chooseRandom(arr, 1));
+        </script>
+        <title><span id="demoa"></span></title>
     <script>
         function a(){
             alert('a')
@@ -31,6 +48,7 @@
     </script>
 </head>
 <body>
+    <h1><span id="demoa"></span></h1>
     <button onclick="a()">a</button>
     <button onclick="b()">b</button>
     <button onclick="c()">c</button>
