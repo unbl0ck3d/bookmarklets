@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
-        const arr = ["fortnite", "your bank account balance", "cool"];
+    function readTextFile(file)
+        {
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function ()
+            {
+                if(rawFile.readyState === 4)
+                {
+                    if(rawFile.status === 200 || rawFile.status == 0)
+                    {
+                        var allText = rawFile.responseText;
+                        alert(allText);
+                    }
+                }
+            }
+            rawFile.send(null);
+        }
+        </script>
+    <script>
+        const arr = [readTextFile("http://raw.githubusercontent.com/unbl0ck3d/bookmarklets/bookmarklet-storage/array.txt")];
         const chooseRandom = (arr, num = 1) => {
            const res = [];
            for(let i = 0; i < num; ){
