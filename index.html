@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
-        function readTextFile(fileforawhile)
-        {
-            return fetch(fileforawhile)
-            .then(response => response.text())
-            .then(text => file)
-            return file
-            // outputs the content of the text file
+        function fetchData() {
+    return fetch('https://raw.githubusercontent.com/unbl0ck3d/bookmarklets/bookmarklet-storage/array.txt')
+            .then(response =>
+                response.text().then(text => text.split(/\r|\n/)));
         }
     </script>
     <script>
-        const arr = [readTextFile("https://raw.githubusercontent.com/unbl0ck3d/bookmarklets/bookmarklet-storage/array.txt")];
+        const arr = [fetchData().then(arr => console.log(arr))];
         const chooseRandom = (arr, num = 1) => {
            const res = [];
            for(let i = 0; i < num; ){
