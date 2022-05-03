@@ -35,10 +35,8 @@
                };
                return res;
             };
-            await new Promise(r => setTimeout(r, 1000));
-                document.getElementById("demoa").innerHTML = (chooseRandom(arr, 1));
-            await new Promise(r => setTimeout(r, 1000));
-                document.getElementById("demob").innerHTML = "demoa";
+            document.getElementById("demoa").innerHTML = (chooseRandom(arr, 1));
+            document.getElementById("demob").innerHTML = "demoa";
             console.log(chooseRandom(arr, 1));
             </script>
             <title id="demoa"></title>
