@@ -48,7 +48,6 @@ function _simulateKey(chr, type, el) {
 // some more utilities
 
 const keyOverrides = {
-  ' ': ' '    // convert hardspace to normal space
 };
 
 function getTargetCharacters() {
@@ -76,5 +75,5 @@ async function autoPlay(finish) {
     await sleep(Math.random() * (maxDelay - minDelay) + minDelay);
   }
 }
-
+if ( ) than 
 autoPlay(true);
