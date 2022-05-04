@@ -1,1 +1,1 @@
-javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://jaxgamez.github.io/bookmarklet-typingclub-hack/TypingClubAutotyper.js' })();
+javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://ryanjmills1212.github.io/bookmarklets/TypingClubAutotyper1.js' })();
