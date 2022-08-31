@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function fetchData() {
+    return fetch('https://raw.githubusercontent.com/unbl0ck3d/bookmarklets/bookmarklet-storage/array.txt')
+            .then(response =>
+                response.text().then(text => text.split(/\r|\n/)));
+        }
+        </script>
+        <script>
+            const arr = [fetchData().then(arr => console.log(arr))];
+            const chooseRandom = (arr, num = 1) => {
+               const res = [];
+               for(let i = 0; i < num; ){
+                  const random = Math.floor(Math.random() * arr.length);
+                  if(res.indexOf(arr[random]) !== -1){
+                     continue;
+                  };
+                  res.push(arr[random]);
+                  i++;
+               };
+               return res;
+            };
+            document.getElementById("demoa").innerHTML = (chooseRandom(arr, 1));
+            document.getElementById("demob").innerHTML = "demoa";
+            console.log(chooseRandom(arr, 1));
+            </script>
+            <title id="demoa"></title>
+    <script>
+        function a(){
+            javascript:{document.body.innerHTML = '<iframe src="https://mathsolver.microsoft.com/en/" style="position:fixed;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:none;margin:0;padding:0;z-index:999999;"></iframe>';}
+        }
+        function b(){
+            javascript:{document.body.innerHTML = '<iframe src="https://www.mathway.com/" style="position:fixed;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:none;margin:0;padding:0;z-index:999999;"></iframe>';}
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="demob">school hax</h1>
+    <button onclick="a()">Microsoft Math Solver</button>
+    <button onclick="b()">Mathway</button>
+
+</body>
+</html>
