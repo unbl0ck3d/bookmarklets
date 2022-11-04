@@ -11,16 +11,16 @@
         }
     </script>
     <script>
-        function pickTitle()
-        const arr = [fetchData().then(arr => console.log(arr))];
-        const chooseRandom = (arr, num = 1) => {
-           const res = [];
-           for(let i = 0; i < num; ){
-              const random = Math.floor(Math.random() * arr.length);
-              if(res.indexOf(arr[random]) !== -1){
+        function pickTitle() {
+            const arr = [fetchData().then(arr => console.log(arr))];
+            const chooseRandom = (arr, num = 1) => {
+                const res = [];
+                for(let i = 0; i < num; ){
+                const random = Math.floor(Math.random() * arr.length);
+                if(res.indexOf(arr[random]) !== -1){
                  continue;
-              };
-              res.push(arr[random]);
+                };
+            res.push(arr[random]);
               i++;
            };
            return res;
@@ -28,6 +28,7 @@
             document.getElementById("demoa").innerHTML = (chooseRandom(arr, 1));
             document.getElementById("demob").innerHTML = "demoa";
         console.log(chooseRandom(arr, 1));
+    }
         </script>
         <title>jax epic site</title>
         <script type="text/javascript">
