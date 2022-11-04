@@ -1,4 +1,4 @@
-const strings = [pizza, fortnite, joe, fort, ejri, fjdisoj, ifodjsof, bfd];
+const strings = ["pizza, fortnite, joe, fort, ejri, fjdisoj, ifodjsof, bfd"];
 window.onload = () => {
  let random = Math.floor(Math.random() * strings.length);
  // example with a div
