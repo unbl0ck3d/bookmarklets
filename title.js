@@ -4,5 +4,5 @@ window.onload = () => {
  // example with a div
   document.getElementById("my-span").innerHTML = strings[random];  
   // example with page title
-  document.title = strings[random];
+  document.title = "my-span";
 };
