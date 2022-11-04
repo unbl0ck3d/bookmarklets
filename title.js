@@ -1,9 +1,4 @@
-function fetchData() {
-    return fetch('https://raw.githubusercontent.com/unbl0ck3d/bookmarklets/bookmarklet-storage/array.txt')
-            .then(response =>
-                response.text().then(text => text.split(/\r|\n/)));
-        };
-const strings = [fetchData().then(arr => console.log(arr))];
+const strings = [pizza, fortnite, joe, fort, ejri, fjdisoj, ifodjsof, bfd];
 window.onload = () => {
  let random = Math.floor(Math.random() * strings.length);
  // example with a div
