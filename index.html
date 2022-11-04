@@ -11,35 +11,14 @@
         }
     </script>
     <script>
-        function pickTitle() {
-            const arr = [fetchData().then(arr => console.log(arr))];
-            const chooseRandom = (arr, num = 1) => {
-                const res = [];
-                for(let i = 0; i < num; ){
-                const random = Math.floor(Math.random() * arr.length);
-                if(res.indexOf(arr[random]) !== -1){
-                 continue;
-                };
-            res.push(arr[random]);
-              i++;
-           };
-           return res;
-        };
-            document.getElementById("demoa").innerHTML = (chooseRandom(arr, 1));
-            document.getElementById("demob").innerHTML = "demoa";
-        console.log(chooseRandom(arr, 1));
-    }
-        </script>
-        <title>jax epic site</title>
-        <script type="text/javascript">
-            function changePageTitle() {
-                pickTitle();
-                document.title = demoa;
-            }
-        </script>
-        <script>
-            changePageTitle();
-            document.title = demoa;
+    const strings = [fetchData];
+    window.onload = () => {
+     let random = Math.floor(Math.random() * strings.length);
+     // example with a div
+      document.getElementById("my-span").innerHTML = strings[random];  
+      // example with page title
+      // document.title = strings[random];
+    };
         </script>
     <script>
         function a(){
