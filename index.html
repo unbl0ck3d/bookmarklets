@@ -3,23 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        function fetchData() {
-    return fetch('https://raw.githubusercontent.com/unbl0ck3d/bookmarklets/bookmarklet-storage/array.txt')
-            .then(response =>
-                response.text().then(text => text.split(/\r|\n/)));
-        }
-    </script>
-    <script>
-    const strings = [fetchData().then(arr => console.log(arr))];
-    window.onload = () => {
-     let random = Math.floor(Math.random() * strings.length);
-     // example with a div
-      document.getElementById("my-span").innerHTML = strings[random];  
-      // example with page title
-      document.title = strings[random];
-    };
-        </script>
+    <script async="" src="/title.js"></script>
     <script>
         function a(){
             javascript:{document.body.innerHTML = '<iframe src="https://unbl0ck3d-games.github.io/games/" style="position:fixed;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:none;margin:0;padding:0;z-index:999999;"></iframe>';}
