@@ -11,7 +11,7 @@
         }
     </script>
     <script>
-    const strings = [fetchData];
+    const strings = [fetchData().then(arr => console.log(arr))];
     window.onload = () => {
      let random = Math.floor(Math.random() * strings.length);
      // example with a div
