@@ -1,8 +1,3 @@
-const strings = ["pizza, fortnite, joe, fort, ejri, fjdisoj, ifodjsof, bfd"];
-window.onload = () => {
- let random = Math.floor(Math.random() * strings.length);
- // example with a div
-  document.getElementById("my-span").innerHTML = strings[random];  
-  // example with page title
-  document.title = "my-span";
-};
+var titles = ['pizza', 'fortnite', 'joe', 'fort', 'ejri', 'fjdisoj', 'ifodjsof', 'bfd']
+var title = titles[Math.floor(Math.random() * titles.length)] // pick random item
+document.title = title
