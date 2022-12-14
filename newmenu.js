@@ -143,7 +143,7 @@ panel = create_tag("div")
 panelbar = create_tag("div")
 
 //panelbar.innerHTML = "<a href='#' onclick='hide_panel()' id='panel_switch' >Hide Panel<a>"
-panelbar.innerHTML = "JS PANEL" ;
+panelbar.innerHTML = "jax epic cool menu" ;
 
 // panelbar.style.position = "fixed"
 panelbar.style.height = "20px";
@@ -175,50 +175,10 @@ document.querySelector("body").appendChild(panel);
 
 
 
-add_label("Useful");
+add_label("Main");
 
-add_mark("Tiny URL", "javascript:void(open('http://tinyurl.com/create.php?url='+encodeURIComponent(location.href)))");
-add_mark("QR Code", "javascript:(function(){if(document.getElementById){var x=document.body;var o=document.createElement('script');if(typeof(o)!='object') o=document.standardCreateElement('script');o.setAttribute('src','http://qrbookmarklet.googlecode.com/svn/trunk/qr.js');o.setAttribute('type','text/javascript');x.appendChild(o);}})();");
-add_mark("Web Archive", "javascript:(function(){window.location='http://web.archive.org/web/*/' + document.URL})()");
-add_mark("Image Search" , "javascript:void((function(){var sir=document.createElement('script');sir.setAttribute('src','http://cdnjs.cloudflare.com/ajax/libs/require.js/0.26.0/require.min.js');sir.setAttribute('type','text/javascript');document.getElementsByTagName('head')[0].appendChild(sir);var sib=document.createElement('script');sib.setAttribute('src','http://jarred.github.com/src-img/js/app/bookmarklet.js?version=0.66');sib.setAttribute('type','text/javascript');document.getElementsByTagName('head')[0].appendChild(sib);})());") ;
-add_mark("Print What You Like", "javascript:(function(){if(window['ppw']&&ppw['bookmarklet']){ppw.bookmarklet.toggle();}else{window._pwyl_home='//www.printwhatyoulike.com/';window._pwyl_pro_id=null;window._pwyl_bmkl=document.createElement('script');window._pwyl_bmkl.setAttribute('type','text/javascript');window._pwyl_bmkl.setAttribute('src',window._pwyl_home+'static/compressed/pwyl_bookmarklet_10.js');window._pwyl_bmkl.setAttribute('pwyl','true');document.getElementsByTagName('head')[0].appendChild(window._pwyl_bmkl);}})();");
-
-
-//add_mark("Show All Links", "#",  showAllLinks)
-//add_mark("Show All Links", "javascript:" + showAllLinks.toString())
-add_mark("Show All Links", showAllLinks)
-
-add_mark("Show Cookies", ShowCookies) ;
-
-//==================
-add_label("Web Dev");
-
-add_mark("Inject JQuery", "javascript:void(function(){document.body.appendChild(document.createElement('script')).src='http://code.jquery.com/jquery-1.7.2.min.js' })();");
-
-
-add_mark("Run Functional.js",
-"javascript:void(function(){document.body.appendChild(document.createElement('script')).src='http://caiorss.github.io/functional.js' })();");
-
-
-add_mark("Execute HTML", "javascript:var txt='';function getSelText(wndw){var sel='';if(document.all){sel=wndw.document.selection.createRange().text;}else{sel=wndw.window.getSelection();}return sel;}void(frms=window.frames);if(frms.length==0){txt=getSelText(window);}else{for(iQA=0;iQA&lt;frms.length;iQA++){void(txt=getSelText(frms[iQA]));if(txt.length&gt;0){break;}}}while(txt.length==0){txt=promt('Input:');}win=window.open('','','');void(win.document.write(txt));void(win.document.close())");
-
-
-
-
-
-
-//==================
-add_label("Security and Auditing");
-
-add_mark("Remove Cookies", "javascript:void(document.cookie=null)");
-
-add_mark("PwnYoutube", "javascript:(function(){url='http://deturl.com/download-video.js';document.body.appendChild(document.createElement('script')).src=url+'?'+new Date().getTime();})();") ;
-
-add_mark("Full URLs", fullUrls)
-
-//===================
-add_label("Updates");
-add_mark("Bookmarklets", "http://caiorss.github.io/bookmarklets.html");
+add_mark("Hub", 'javascript:document.body.innerHTML = "<iframe src=\"https:\/\/unbl0ck3d.github.io/bookmarklets/\/\" style=\"border:0px #ffffff none;\" name=\"myiFrame\" scrolling=\"yes\" frameborder=\"1\" marginheight=\"0px\" marginwidth=\"0px\" height=\"100%\" width=\"100%\" allowfullscreen><\/iframe>');
+add_mark("Bookmarklets", "alert('i forgot by bad')");
 
 add_mark("Close", remove_panel)
 
