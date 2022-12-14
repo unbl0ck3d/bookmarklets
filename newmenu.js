@@ -177,7 +177,7 @@ document.querySelector("body").appendChild(panel);
 
 add_label("Main");
 
-add_mark("Hub", 'javascript:document.body.innerHTML = "<iframe src=\"https:\/\/unbl0ck3d.github.io/bookmarklets/\/\" style=\"border:0px #ffffff none;\" name=\"myiFrame\" scrolling=\"yes\" frameborder=\"1\" marginheight=\"0px\" marginwidth=\"0px\" height=\"100%\" width=\"100%\" allowfullscreen><\/iframe>');
+add_mark("Hub", 'document.body.innerHTML = "<iframe src=\"https:\/\/unbl0ck3d.github.io/bookmarklets/\/\" style=\"border:0px #ffffff none;\" name=\"myiFrame\" scrolling=\"yes\" frameborder=\"1\" marginheight=\"0px\" marginwidth=\"0px\" height=\"100%\" width=\"100%\" allowfullscreen><\/iframe>');
 add_mark("Bookmarklets", "alert('i forgot by bad')");
 
 add_mark("Close", remove_panel)
